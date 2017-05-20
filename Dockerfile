@@ -1,4 +1,4 @@
-FROM alpine:3.5
+FROM ubuntu:16.04
 
 COPY ./oauth2_proxy /oauth2_proxy
 
