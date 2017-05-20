@@ -1,7 +1,6 @@
 FROM alpine:3.5
 
-RUN apt-get update  
-RUN apt-get install -y ca-certificates
+RUN apk --no-cache add ca-certificates && update-ca-certificates
 
 COPY ./oauth2_proxy /oauth2_proxy
 
